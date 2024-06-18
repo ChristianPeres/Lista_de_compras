@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Finanças</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Controle de Finanças</h1>
+        <div class="initial-balance-form">
+            <h3>Saldo Inicial</h3>
+            <input type="number" id="initialBalance" placeholder="Digite o saldo inicial">
+            <button id="setInitialBalanceBtn">Definir Saldo Inicial</button>
+        </div>
+        <div class="balance-card">
+            <h2>Saldo Atual</h2>
+            <div class="balance-amount" id="balance">R$ 0.00</div>
+        </div>
+        <div class="transaction-form">
+            <h3>Adicionar Transação</h3>
+            <input type="text" id="description" placeholder="Descrição">
+            <input type="number" id="amount" placeholder="Valor">
+            <select id="transactionType">
+                <option value="income">Saldo que Entrou</option>
+                <option value="expense">Dívida</option>
+            </select>
+            <button id="addTransactionBtn">Adicionar</button>
+        </div>
+        <div class="transactions">
+            <h3>Transações</h3>
+            <ul id="transactionList"></ul>
+        </div>
+        <button id="clearAllBtn">Apagar Todos os Dados</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
